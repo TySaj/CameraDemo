@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+<!--  Image view for displaying the taken picture.  -->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_width="400dp"
+        android:layout_height="400dp" />
+
+<!--  Button to take the picture.  -->
+    <Button
+        android:id="@+id/btnCapture"
+        android:text="@string/capture_image"
+        style="@style/Widget.Material3.MaterialDivider.Heavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
